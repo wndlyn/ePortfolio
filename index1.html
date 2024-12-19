@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon for the website -->
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Tailwind CSS for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS for responsive design -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Particleground JavaScript for background animation -->
+    <script type="text/javascript" src="js/jquery.particleground.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+    <!-- Additional Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome for additional icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"/>
+
+    <title>My ePortfolio</title>
+</head>
+
+<body style="background-color: #f88aa2;">
+
+    <!-- Particles background effect -->
+    <div id="particles"></div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Logo and welcome message -->
+        <a href="#" class="logo">Welcome!</a>
+        <nav class="navbar">
+            <!-- Navigation links -->
+            <a href="#" class="active">Home</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">        
+        <div class="home-image">
+            <!-- Profile image -->
+            <img src="Image/my_image.png" alt="">
+        </div>
+        <div class="home-content">
+            <!-- Portfolio title -->
+            <a href="#" class="logo">Wende ePortfolio</a>
+            <h1>Hi, I'm Wendelyn Paller</h1>
+            <h3>Computer Science Student</h3>
+            <!-- Personal introduction -->
+            <p>I’m a Computer Science student who started this journey with little knowledge about computers, unsure of why I chose this path. Over time, I’ve realized the value of this field and its impact on my growth. Now, I’m focused on improving myself, learning new skills, and proving that I can succeed through determination and effort.</p>
+            <div class="home-sci">
+                <!-- Social media links -->
+                <a href="https://web.facebook.com/wendelyn.paller.7"><i class='bx bxl-facebook'></i></a>
+                <a href="https://x.com/PallerWend79336"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/w_ndlyn/"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about">
+        <div class="caption">
+            <!-- Section title -->
+            <span class="border" id="skills">About Me</span>
+        </div>
+        <br><br>
+        <div class="row">
+            <!-- First column: Personal details -->
+            <div class="col-sm-4">
+                <i class="fas fa-code fa-3x"></i>
+                <br><br>
+                <!-- Personal description -->
+                <p>I am a 20-year-old from Maramag, Bukidnon, currently exploring my path in the field of application development. </p>
+                <p>While I may not have a strong foundation in this field yet, I am determined to do my best to learn and grow.</p>
+                <p>I am still figuring out if this course is the right fit for me, but I approach it with perseverance and a willingness to understand new concepts.</p>
+                <h6>"KEEP LEARNING SELF, KEEP GOING, YOU CAN DO IT!"</h6>
+            </div>  
+            <!-- Second column: Skills and creativity -->
+            <div class="col-sm-4">
+                <i class="fas fa-pencil-ruler fa-3x"></i>
+                <br><br>
+                <!-- Skills description -->
+                <p>In terms of skills, I have basic knowledge of coding but often find it challenging, especially when it comes to understanding Java.</p>
+                <p>On the creative side, I enjoy designing and drawing, though I recognize there's room for improvement. </p>
+                <h6>"I MAY NOT KNOW EVERYTHING YET, BUT WITH CURIOSITY AND CREATIVITY"</h6>
+            </div> 
+            <!-- Third column: Interests -->
+            <div class="col-sm-4">
+                <i class="fas fa-book fa-3x"></i>
+                <br><br>
+                <!-- Interests description -->
+                <p>My interests include exploring new things and learning about unfamiliar topics, although I sometimes feel discouraged before starting.</p>
+                <p>Despite these challenges, I continue to push myself to try and discover my potential.</p>
+                <h6>"I'M BUILDING MY SKILLS ONE STEP AT A TIME"</h6>
+            </div>   
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="about">
+        <div class="container">
+            <div class="content-section" style="padding: 9% 5em;">
+                <!-- Education title -->
+                <p style="color: #22080b;">--My Education</p>
+                <h1 style="padding:20px 1.5em; font-size: 40px; font-family: 'Times New Roman', Times, serif;">My Journey as a Student</h1>
+                <!-- Education narrative -->
+                <p style="padding: 15px; font-size: larger; font-family: cursive;">In elementary school, Computer Science was never on my choice; I saw computers as tools for games but not a career path. In high school, while my classmates shared their plans, I felt uncertain about my future and ended up choosing Computer Science not out of passion but practicality, thinking, “Maybe I'll figure it out along the way.” The course proved challenging yet rewarding, teaching me problem-solving, critical thinking, and adaptability. I realized that the course you choose doesn't dictate your career forever; it's but a foundation. Life is rarely linear, and your future is shaped by learning, growth, and the passions you discover along the way.</p>
+            </div>
+
+            <!-- Education Cards -->
+            <div class="cards-section d-flex flex-wrap justify-content-center">
+                <!-- Elementary School card -->
+                <div class="card" style="width: 300px; background-color: #a2d2ff; padding: 20px; border-radius: 50px; margin: 20px;">
+                    <h3 style="text-align: center; color: #22080b; font-size:  26px; font-family: Georgia, 'Times New Roman', Times, serif;">Elementary School</h3>
+                    <p style="text-align: center; color: #22080b; font-family: cursive;">Graduated at Francisco Villa Elementary School</p>
+                </div>
+                <!-- Senior High School card -->
+                <div class="card" style="width: 300px; background-color: #a2d2ff; padding: 20px; border-radius: 50px; margin: 20px;">
+                    <h3 style="text-align: center; color: #22080b; font-size: 26px; font-family : 'Times New Roman', Times, serif;">Senior High School</h3>
+                    <p style="text-align: center; color: #22080b; font-family: cursive;">Graduated at Bukidnon National School of Home Industries</p>
+                </div>
+                <!-- College card -->
+                <div class="card" style="width: 300px; background-color: #a2d2ff; padding: 20px; border-radius: 50px; margin: 20px;">
+                    <h3 style="text-align: center; color: #22080b; font-size: 26px; font-family: 'Times New Roman', Times, serif;">College</h3>
+                    <p style="text-align: center; color: #22080b; font-family: cursive;">Currently Studying at University of Science and Technology in Southern Philippines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <div class="container skillsdelt mx-auto pt-16">
+        <div class="flex flex">
+        <div class="flex flex-wrap">
+            <!-- Project 1 Section -->
+            <div class="w-full lg:w-1/2" id="leftSection">
+                <div class="flex flex-col h-full p-10 left_sec">
+                    <h4 style="color: #22080b; font-family: monospace;" class="text-lg font-bold">Project 1</h4>
+                    <h2 class="text-5xl font-bold" style="color: #22080b; margin-top: 25px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">A PingPong Game</h2>
+                    <!-- Project description -->
+                    <p style="color: #22080b; font-size: 18px; margin-top: 15px; font-family: cursive;">It was the first game I created during my first year of college as one of the PITs under Sir Junar. It was my first-ever game, simple and easy to play, designed for a single player. The speed of the ball increases as you spend more time playing, adding a fun challenge.</p>
+                    <!-- Link to source code -->
+                    <a href="https://github.com/wndlyn/PROJECT" class="flex items-center text-white text-yellow-500">
+                        <span class="mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10.998" viewBox="0 0 18 10.998">
+                                <g id="right_arrow_-_icon" data-name="right arrow - icon" transform="translate(21 -6.501) rotate(90)">
+                                    <path id="Path_98" data-name="Path 98" d="M6.59,11.858a.714.714,0,0,0,.627.38h4.066v8.028a.717.717,0,1,0,1.434,0V12.238h4.066a.713.713,0,0,0,.627-.38.748.748,0,0,0-.02-.745l-4.783-7.77a.709.709,0,0,0-1.214,0L6.61,11.113A.754.754,0,0,0,6.59,11.858Z" fill="#fecd1a"/>
+                                </g>
+                            </svg>
+                        </span>
+                        Source Code
+                    </a>
+                </div>
+            </div>
+            <!-- Project 1 Image Section -->
+            <div class="w-full lg:w-1/2 anime" id="rightSection">
+                <div class="flex justify-center items-center h-full">
+                    <div class="w-3/4">
+                        <a href="Image/PingPong.png" target="_blank">
+                            <img src="Image/PingPong.png" alt="Image" class="w-full h-auto">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container skillsdelt mt-20 pt-16">
+        <div class="flex flex-wrap">
+            <!-- Project 2 Image Section -->
+            <div class="w-full lg:w-1/2 anime" id="rightSection1">
+                <div class="flex justify-center items-center h-full">
+                    <div class="w-3/4">
+                        <a href="Image/snake.png" target="_blank">
+                            <img src="Image/snake.png" alt="Image" class="w-full h-auto">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 Section -->
+            <div class="w-full lg:w-1/2" id="leftSection1">
+                <div class="flex flex-col h-full p-10 left_sec">
+                    <h4 style="color: #22080b; font-family: monospace;" class="text-lg font-bold">Project 2</h4>
+                    <h2 class="text-5xl font-bold" style="color: #22080b; margin-top: 25px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Simple Snake Game</h2>
+                    <!-- Project description -->
+                    <p style="color: #22080b; font-size: 18px; margin-top: 15px; font-family: cursive;">One of my earliest projects was a simple Snake game built using Python. Initially, I thought Python wasn't suited for creating games, but working on this project changed my perspective. It was a straightforward implementation, yet it taught me the basics of game logic, such as handling player input, controlling the snake’s movement, and managing collisions. This experience showed me Python’s versatility and sparked my interest in game development.</p>
+                    <!-- Link to source code -->
+                    <a href="https://github.com/wndlyn/Basic_PingPong_Game" class="flex items-center text-white text-yellow-500">
+                        <span class="mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10.998" viewBox="0 0 18 10.998">
+                                <g id="right_arrow_-_icon" data-name="right arrow - icon" transform="translate(21 -6.501) rotate(90)">
+                                    <path id="Path_98" data-name="Path 98" d="M6.59,11.858a.714.714,0,0,0,.627.38h4.066v8.028a.717.717,0,1,0,1.434,0V12.238h4.066a.713.713,0,0,0,.627-.38.748.748,0,0,0-.02-.745l-4.783-7.77a.709.709,0,0,0-1.214,0L6.61,11.113A.754.754,0,0,0,6.59,11.858Z" fill="#fecd1a"/>
+                                </g>
+                            </svg>
+                        </span>
+                        Source Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container skillsdelt mt-20 pt-16">
+        <div class="flex flex-wrap">
+            <!-- Project 3 Section -->
+            <div class="w-full lg:w-1/2" id="leftSection2">
+                <div class="flex flex-col h-full p-10 left_sec">
+                    <h4 style="color: #22080b; font-family: monospace;" class="text-lg font-bold">Project 3</h4>
+                    <h2 class="text-5xl font-bold" style="color: #22080b; margin-top: 25px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">First Website Practice</h2>
+                    <!-- Project description -->
+                    <p style="color: #22080b; font-size: 18px; margin-top: 15px; font-family: cursive;">This project was a very interesting and valuable experience for me, as it marked my first time working with HTML and CSS. As part of my Application Development subject, I was tasked with creating a simple yet effective webpage that displayed images and their corresponding titles. What made this project stand out was the hands-on learning of how HTML structures the content and how CSS is used to style and layout the elements.</p>
+                    <!-- Link to source code -->
+                    <a href="https://github.com/wndlyn/First-Website-Practice" class="flex items-center text-white text-yellow-500">
+                        <span class="mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10.998" viewBox="0 0 18 10.998">
+                                <g id="right_arrow_-_icon" data-name="right arrow - icon" transform="translate(21 -6.501) rotate(90)">
+                                    <path id="Path_98" data-name="Path 98" d="M6.59,11.858a.714.714,0,0,0,.627.38h4.066v8.028a.717.717,0,1,0,1.434,0V12.238h4.066a.713.713,0,0,0,.627-.38.748.748,0,0,0-.02-.745l-4.783-7.77a. 709.709,0,0,0-1.214,0L6.61,11.113A.754.754,0,0,0,6.59,11.858Z" fill="#fecd1a"/>
+                                </g>
+                            </svg>
+                        </span>
+                        Source Code
+                    </a>
+                </div>
+            </div>
+            <!-- Project 3 Image Section -->
+            <div class="w-full lg:w-1/2 anime" id="rightSection2">
+                <div class="flex justify-center items-center h-full">
+                    <div class="w-3/4">
+                        <a href="Image/app_dev.png" target="_blank">
+                            <img src="Image/app_dev.png" alt="Image" class="w-full h-auto">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Center Button Section -->
+    <div class="center-button">
+        <button style="background-color: #69bbf6; margin-top: 50px;">
+            <a href="contact.html" id="conbtn">Contact Me</a>
+            <div class="star-1">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                        <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="star-2">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                        <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="star-3">
+                <svg xmlns:xlink="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                        <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371 .12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="star-4">
+                <svg xmlns:xlink="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                        <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="star-5">
+                <svg xmlns:xlink="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                        <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="star-6">
+                <svg xmlns:xlink="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version=" 1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <defs></defs>
+                    <g id="Layer_x0020_1">
+                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                        <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path>
+                    </g>
+                </svg>
+            </div>
+        </button>
+    </div>
+
+    <!-- New Statistics Section -->
+    <div class="new-statistics-wrapper">
+        <h2 class="new-statistics-title">My Achievements</h2>
+        <div class="new-statistics-container">
+            <!-- Clients statistic -->
+            <div class="new-statistic-item">
+                <span class="new-num" data-val="150">0</span>
+                <span class="new-text">Clients</span>
+            </div>
+            <!-- Projects Completed statistic -->
+            <div class="new-statistic-item">
+                <span class="new-num" data-val="75">1</span>
+                <span class="new-text">Projects Completed</span>
+            </div>
+            <!-- Awards statistic -->
+            <div class="new-statistic-item">
+                <span class="new-num" data-val="10">0</span>
+                <span class="new-text">Awards</span>
+            </div>
+            <!-- Experience statistic -->
+            <div class="new-statistic-item">
+                <span class="new-num" data-val="5">0</span>
+                <span class="new-text">Experience</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="infoo">
+        <h3 style="color: #22080b; text-align: center;">
+            -------The beautiful thing about learning is that no one can take it away from you-------
+        </h3>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">ePortfolio made by <a target="_blank" rel="noopener noreferrer" href="#">Wendelyn</a></span>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script>
+        // For animation in picture for project 1, 2, and 3.
+        const intersectionCallback = (entries) => {
+            for (const entry of entries) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animatedcard');
+                }
+            }
+        };
+
+        const observer = new IntersectionObserver(intersectionCallback);
+        const items = document.querySelectorAll('.anime');
+        items.forEach(item => observer.observe(item));
+    </script>
+</body>
+</html>

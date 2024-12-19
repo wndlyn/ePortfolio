@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!-- Including external stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Including particle animation script -->
+    <script type="text/javascript" src="js/jquery.particleground.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+
+    <!-- Link to custom styles -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body style="background-color: #fc94aa;">
+
+    <!-- Particle animation background -->
+    <div id="particles"></div>
+
+    <!-- Main container for the contact form and description -->
+    <div class="container" style="padding: 97px 40px;">
+        <!-- Left section: Description -->
+        <div class="left-section">
+            <div class="contact-heading">
+                <h3 class="text-lg" style="font-size: 16px; color: #22080b">--Contact Me</h3>
+            </div>
+            <div class="touch-heading">
+                <h1 class="text-14xl pt-4 font-bold"
+                    style="font-size: 38px; font-family: 'Trebuchet MS', Arial, sans-serif;">
+                    Feel Free to reach Out</h1>
+            </div>
+            <div class="description pt-2">
+                <p style="line-height: 26px;font-size: 18px; font-family: 'Gill Sans', sans-serif;">
+                    If you need anything or want to know more about me, please don’t hesitate to ask. Whether it’s about
+                    my background, experiences, skills, or anything else, feel free to reach out.
+                </p>
+            </div>
+            <div class="contact-info">
+                <div class="email-div">
+                    <h3>Email</h3>
+                    <p>example1@example.com</p>
+                    <p>example2@example.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right section: Contact Form -->
+        <div class="right-section">
+            <form id="contact-form">
+                <div class="container">
+                    <div class="row input-container">
+                        <!-- Input for Full Name -->
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input">
+                                <input type="text" id="name" placeholder="Full Name" required />
+                            </div>
+                        </div>
+                        <!-- Input for Email -->
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input" style="float:right;">
+                                <input type="email" id="email" placeholder="Email" required />
+                            </div>
+                        </div>
+                        <!-- Input for Message -->
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <textarea id="message" placeholder="Message" required></textarea>
+                            </div>
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="col-xs-12">
+                            <button type="submit" class="conbtn" style="width: fit-content; cursor: pointer;">Send to Me</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

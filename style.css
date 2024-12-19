@@ -1,0 +1,738 @@
+/* Importing the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Global styles for all elements */
+* {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-family: 'Poppins', sans-serif; /* Set default font */
+}
+
+/* Body styles */
+.body {
+    width: 80%; /* Set body width */
+    height: 80%; /* Set body height */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Particles background effect */
+#particles {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 80%; /* Set width */
+    height: 80%; /* Set height */
+    overflow: hidden; /* Hide overflow */
+    z-index: -1; /* Send to the back */
+    opacity: 0.3; /* Set opacity */
+}
+
+/* Animation styles for images */
+.animated-img {
+    position: relative; /* Relative positioning for animation */
+    opacity: 0; /* Start invisible */
+    animation: fadeInUp 4s linear forwards; /* Fade in animation */
+}
+
+/* Animation styles for skills */
+.animated-skills {
+    position: relative; /* Relative positioning for animation */
+    opacity: 0; /* Start invisible */
+    animation: moveleft 4s linear forwards; /* Move left animation */
+}
+
+/* Animation styles for cards */
+.animatedcard {
+    position: relative; /* Relative positioning for animation */
+    opacity: 0; /* Start invisible */
+    animation: fadeInUp 3s linear forwards; /* Fade in animation */
+}
+
+/* Keyframes for left movement animation */
+@keyframes moveleft {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translateX(25px); /* Start from the right */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+/* Keyframes for fade in up animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translateY(100px); /* Start from below */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+/* ---------- Header Styles ----------- */
+.header {
+    position: fixed; /* Fixed position at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    padding: 6px 10%; /* Padding for header */
+    background: #fed8d8; /* Background color */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    z-index: 100; /* Bring to the front */
+    font-family: 'Times New Roman', serif; /* Font family */
+}
+
+/* Logo styles */
+.logo {
+    font-size: 15px; /* Font size */
+    color: #021134; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    height: 50px; /* Height of navbar */
+    padding: 0 20px; /* Padding for navbar */
+}
+
+/* Navbar link styles */
+.navbar a {
+    font-size: 20px; /* Font size */
+    text-decoration: none; /* Remove underline */
+    color: #401217; /* Text color */
+    font-weight: 20; /* Font weight */
+    transition: 0.3s; /* Transition effect */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+}
+
+/* Logo in navbar */
+.navbar .logo {
+    margin-left: auto; /* Push logo to the right */
+}
+
+/* Navbar link hover effect */
+.navbar a:hover {
+    color: #00aaff; /* Change color on hover */
+}
+
+/*------------------ Introduction Section -------------*/
+.home {
+    min-height: 100vh; /* Ensure the home section takes at least the full viewport height */
+    background: linear-gradient(-90deg, #fc94aa 65%, #facdd7 35%); /* Background gradient */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 0 10%; /* Padding for home section */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.home-content {
+    max-width: 600px; /* Keep the max width for content */
+    color: #22080b; /* Text color */
+    text-align: center; /* Center text */
+    font-family: cursive; /* Font family */
+    flex: 1; /* Allow content to take available space */
+    min-width: 300px; /* Minimum width for content */
+}
+
+.home-image {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center image */
+    align-items: center; /* Center image */
+    width: 500px; /* Width of image container */
+    height: 500px; /* Height of image container */
+    background: #fc94aa; /* Background color */
+    border-radius: 50%; /* Circular shape */
+    border: 25px solid #facdd7; /* Border around image */
+    outline: 25px solid #fc94aa; /* Outline around image */
+}
+
+.home-image img {
+    position: relative; /* Relative positioning */
+    bottom: 1px; /* Slight adjustment */
+    max-width: 400px; /* Maximum width for image */
+    border-radius: 50%; /* Circular shape */
+}
+
+.home-content h1 {
+    font-size: 55px; /* Font size */
+    line-height: 1.2; /* Line height */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    margin-top: 60px; /* Margin above heading */
+}
+
+.home-content h3 {
+    font-size: 40px; /* Font size */
+    color: transparent; /* Transparent text */
+    -webkit-text-stroke: 0.5px #fff; /* Text stroke */
+    background-image: linear-gradient(rgb(86, 222, 224), #00abf0); /* Gradient background */
+    background-repeat: no-repeat; /* No repeat */
+    background-clip: text; /* Clip background to text */
+    animation: animatetext 6s linear infinite; /* Animation for text */
+    text-align: center; /* Center text */
+}
+
+@keyframes animatetext {
+    0%, 95%, 100% {
+        background-position: -410px 0; /* Start and end positions */
+    }
+    65%, 85% {
+        background-position: 0 0; /* Middle position */
+    }
+}
+
+.home-content p {
+    font-size: 16px; /* Font size */
+    margin-top: 20px; /* Margin above paragraph */
+}
+
+/*------------- Social Media Links ----------------*/
+.home-sci a {
+    display: inline-flex; /* Flexbox layout */
+    justify-content: center; /* Center icon */
+    align-items: center; /* Center icon */
+    width: 50px; /* Width of icon */
+    height: 50px; /* Height of icon */
+    background: transparent; /* Transparent background */
+    border: 2px solid #fff; /* White border */
+    border-radius: 50%; /* Circular shape */
+    font-size: 25px; /* Font size */
+    color: #f07799; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    margin-top: 20px; /* Margin above icon */
+    margin-right: 20px; /* Margin to the right */
+}
+
+.home-sci a:hover {
+    background: #69bbf6; /* Background color on hover */
+    color: #8bd1e7; /* Text color on hover */
+    border-color: #fbd3e8; /* Border color on hover */
+    box-shadow: 0 0 10px #f9dbe9; /* Shadow effect on hover */
+}
+
+.home-sci i {
+    color: rgb(66, 18, 18); /* Icon color */
+}
+
+/* Media Query for smaller screen sizes */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center; /* Center items */
+        padding: 20px; /* Add padding for smaller screens */
+    }
+
+    .home-image {
+        width: 300px; /* Adjust image size for smaller screens */
+        height: 300px; /* Adjust image size for smaller screens */
+        margin-bottom: 20px; /* Add space below the image */
+    }
+
+    .home-content {
+        text-align: center; /* Center text on smaller screens */
+        margin-right: 0; /* Remove right margin */
+        flex: 1 1 100%; /* Allow content to take full width */
+    }
+
+    .home-content h1 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .home-content h3 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    .home-content p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Link styles */
+a {
+    color: rgb(202, 158, 62); /* Link color */
+}
+
+/* Link hover effect */
+a:hover {
+    color: rgb(165, 122, 29); /* Change color on hover */
+}
+
+/* Icon styles in columns */
+.row .col-sm-4 i {
+    color: rgb(133, 45, 45); /* Icon color */
+}
+
+/* Paragraph styles in columns */
+.row .col-sm-4 p {
+    font-weight: bold; /* Bold text */
+    color: rgb(133, 45, 45); /* Text color */
+}
+
+/* Text alignment in columns */
+.row .col-sm-4 p, .row .col-sm-4 ul > li, .row .col-sm-4 h6 {
+    text-align: left; /* Left align text */
+}
+
+/* Overlay text styles */
+.text {
+    color: #f2f2f2; /* Text color */
+    font-size: 20px; /* Font size */
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centering transformation */
+    text-align: center; /* Center text */
+    margin: 20px 50px; /* Margin for spacing */
+}
+
+/* Overlay styles */
+.overlay {
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to top */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+    opacity: 0; /* Start invisible */
+    transition: .5s ease; /* Transition effect */
+    background-color: rgb(48, 92, 52); /* Background color */
+}
+
+/* Skills section styles */
+.skills {
+    background-color: #272626; /* Background color */
+    color: #f2f2f2; /* Text color */
+}
+
+/* Links section styles */
+.links {
+    text-align: center; /* Center text */
+}
+
+/* Form section styles */
+.form {
+    background-color: #333; /* Background color */
+    text-align: center; /* Center text */
+}
+
+/* About section styles */
+.about {
+    width: 794px; /* Set width */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 10px; /* Margin above */
+    height: auto; /* Automatic height */
+}
+
+/* Caption styles */
+.caption {
+    position: relative; /* Relative positioning */
+    opacity: 0.80; /* Opacity */
+    margin-top: 100px; /* Margin above */
+    text-align: center; /* Center text */
+    background-attachment: fixed; /* Fixed background */
+    background-position: center; /* Center background */
+    background-repeat: no-repeat; /* No repeat */
+    background-size: cover; /* Cover background */
+    min-height: 200px; /* Minimum height */
+}
+
+/* Border styles */
+.border {
+    background-color: #89cff2; /* Background color */
+    font-size: 1.5rem; /* Font size */
+    color: #000; /* Text color */
+    padding: 5px 10px; /* Padding */
+    letter-spacing: 0.2rem; /* Letter spacing */
+    text-transform: uppercase; /* Uppercase text */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+}
+
+/* Row styles */
+.row {
+    display: flex; /* Flexbox layout */
+    text-align: center; /* Center text */
+    flex-wrap: wrap; /* Allow wrapping */
+    margin-top: -150px; /* Negative margin for overlap */
+}
+
+/* Paragraph and heading styles */
+p, h6 {
+    margin: 2px 0; /* Adjust margin for paragraphs and headings */
+    font-size: 1rem; /* Font size */
+}
+
+/* Unordered list styles */
+ul {
+    text-align: left; /* Left align text */
+    display: inline-block; /* Keep the list inline */
+    margin: 5px 0; /* Adjust margin for the list padding-left: 20px; /* Padding for list items */
+}
+
+/* Card styles */
+.card {
+    width: 45%; /* Set width */
+    padding: 0px; /* No padding */
+    background-color: rgb(45, 46, 50); /* Background color */
+    margin-bottom: 20px; /* Margin below card */
+}
+
+/* Card heading styles */
+.card h3 {
+    font-size: 18px; /* Font size */
+    margin-bottom: 10px; /* Margin below heading */
+}
+
+/* Card paragraph styles */
+.card p {
+    font-size: 14px; /* Font size */
+    line-height: 1.5; /* Line height */
+    margin-top: 25px; /* Margin above paragraph */
+}
+
+/* Container styles */
+.container {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+/* Content section styles */
+.content-section {
+    flex: 1 1 50%; /* Flex grow and shrink */
+}
+
+/* Cards section styles */
+.cards-section {
+    flex: 1 1 50%; /* Flex grow and shrink */
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping */
+    border-collapse: separate; /* Separate borders */
+    border-spacing: 15px; /* Spacing between cards */
+}
+
+/* Media Query for smaller screen sizes */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .content-section,
+    .cards-section {
+        flex: 1 1 100%; /* Allow full width */
+    }
+}
+
+/* Center Button Section */
+.center-button {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the button */
+    align-items: center; /* Center vertically */
+    margin-top: 300px; /* Margin above */
+}
+
+/* Button styles */
+.center-button button {
+    height: 61px; /* Set height */
+    width: 141px; /* Set width */
+    position: relative; /* Relative positioning */
+    padding: 0; /* Remove padding */
+    background: #89cff2; /* Background color */
+    font-size: 17px; /* Font size */
+    font-weight: 500; /* Font weight */
+    color: #181818; /* Text color */
+    border: 3px solid #26acbb; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 0 #fec1958c; /* Box shadow */
+    transition: all .3s ease-in-out; /* Transition effect */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
+}
+
+/* Link styles in button */
+.center-button a {
+    text-decoration: none; /* Remove underline */
+    color: #181818; /* Text color */
+    font-size: 20px; /* Font size */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center text */
+    align-items: center; /* Center text */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+}
+
+/* Star animation styles */
+.star-1 {
+    position: absolute; /* Absolute positioning */
+    top: 20%; /* Position from top */
+    left: 20%; /* Position from left */
+    width: 25px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 0 #fffdef); /* Shadow effect */
+    z-index: -5; /* Send to the back */
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96); /* Transition effect */
+}
+
+.star-2 {
+    position: absolute; /* Absolute positioning */
+    top: 45%; /* Position from top */
+    left: 45%; /* Position from left */
+    width: 15px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 0 #fffdef); /* Shadow effect */
+    z-index: -5; /* Send to the back */
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01); /* Transition effect */
+}
+
+.star-3 {
+    position: absolute; /* Absolute positioning */
+    top: 40%; /* Position from top */
+    left: 40%; /* Position from left */
+    width: 5px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 0 #fffdef); /* Shadow effect */
+    z-index: -5; /* Send to the back */
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01); /* Transition effect */
+}
+
+.star-4 {
+    position: absolute; /* Absolute positioning */
+    top: 20%; /* Position from top */
+    left: 40%; /* Position from left */
+    width: 8px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 0 #fffdef); /* Shadow effect */
+    z-index: -5; /* Send to the back */
+    transition: all .8s cubic-bezier(0, 0.4, 0, 1.01); /* Transition effect */
+}
+
+.star-5 {
+    position: absolute; /* Absolute positioning */
+    top: 25%; /* Position from top */
+    left: 45%; /* Position from left */
+    width: 15px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 0 #fffdef); /* Shadow effect */
+    z-index: -5; /* Send to the back */
+    transition: all .6s cubic-bezier(0, 0.4, 0, 1.01); /* Transition effect */
+}
+
+.star-6 {
+    position: absolute; /* Absolute positioning */
+    top: 5%; /* Position from top */
+    left: 50%; /* Position from left */
+    width: 5px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 0 #fffdef); /* Shadow effect */
+    z-index: -5; /* Send to the back */
+    transition: all .8s ease; /* Transition effect */
+}
+
+/* Button hover effect */
+button:hover {
+    background: transparent; /* Change background on hover */
+    color: #FEC195; /* Change text color on hover */
+    box-shadow: 0 0 25px #c7dff38c; /* Add shadow effect on hover */
+    color: rgb(173, 230, 244); /* Change text color on hover */
+}
+
+/* Star hover effects */
+button:hover .star-1 {
+    position: absolute; /* Absolute positioning */
+    top: -80%; /* Move star up */
+    left: -30%; /* Move star left */
+    width: 25px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 10px #fffdef); /* Shadow effect */
+    z-index: 2; /* Bring to the front */
+}
+
+button:hover .star-2 {
+    position: absolute; /* Absolute positioning */
+    top: -25%; /* Move star up */
+    left: 10%; /* Move star right */
+    width: 15px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 10px #fffdef); /* Shadow effect */
+    z-index: 2; /* Bring to the front */
+}
+
+button:hover .star-3 {
+    position: absolute; /* Absolute positioning */
+    top: 55%; /* Move star down */
+    left: 25%; /* Move star right */
+    width: 5px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 10px #fffdef); /* Shadow effect */
+    z-index: 2; /* Bring to the front */
+}
+
+button:hover .star-4 {
+    position: absolute; /* Absolute positioning */
+    top: 30%; /* Move star down */
+    left: 80%; /* Move star right */
+    width: 8px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 10px #fffdef); /* Shadow effect */
+    z-index: 2; /* Bring to the front */
+}
+
+button:hover .star-5 {
+    position: absolute; /* Absolute positioning */
+    top: 25%; /* Move star down */
+    left: 115%; /* Move star right */
+    width: 15px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 10px #fffdef); /* Shadow effect */
+    z-index: 2; /* Bring to the front */
+}
+
+button:hover .star-6 {
+    position: absolute; /* Absolute positioning */
+    top: 5%; /* Move star up */
+    left: 60%; /* Move star right */
+    width: 5px; /* Width of star */
+    height: auto; /* Auto height */
+    filter: drop-shadow(0 0 10px #fffdef); /* Shadow effect */
+    z-index: 2; /* Bring to the front */
+}
+
+/* Fill color for SVG elements */
+.fil0 {
+    fill: #FFFDEF; /* Fill color */
+}
+
+/* Center Button Section */
+.center-button {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the button */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full height */
+    margin: 0; /* Add some margin for spacing */
+}
+
+/* Button styles */
+.center-button button {
+    height: 61px; /* Set the height of the button */
+    width: 141px; /* Set the width of the button */
+    position: relative; /* Relative positioning */
+    padding: 12px 35px; /* Add padding for the button */
+    background: #89cff2; /* Background color */
+    font-size: 17px; /* Font size */
+    font-weight: 500; /* Font weight */
+    color: #181818; /* Text color */
+    border: 3px solid #26acbb; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 0 #fec1958c; /* Box shadow */
+    transition: all .3s ease-in-out; /* Transition effect */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Link styles in button */
+.center-button a {
+    text-decoration: none; /* Remove underline from link */
+    color: #181818; /* Text color for the link */
+    font-size: 20px; /* Font size */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    height: 100%; /* Make anchor take full height of button */
+    width: 100%; /* Make anchor take full width of button */
+}
+
+/* New Statistics Section */
+.new-statistics-wrapper {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the statistics container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-top: 150px; /* Adjusted margin for spacing */
+}
+
+/* Container for statistics items */
+.new-statistics-container {
+    display: flex; /* Flexbox layout */
+    justify-content: absolute; /* Space items evenly */
+    width: 100%; /* Full width of the parent */
+    max-width: 1200px; /* Limit the width for larger screens */
+    padding: 20px; /* Add padding around the container */
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Individual statistic item styles */
+.new-statistic-item {
+    flex: 1; /* Allow items to grow equally */
+    text-align: center; /* Center text */
+    margin: 10px; /* Add some margin between items */
+    background-color: #a2d2ff; /* Background color for the items */
+    padding: 20px; /* Padding for the items */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth hover effect */
+    min-width: 200px; /* Set a minimum width for each item */
+    max-width: 300px; /* Set a maximum width for each item */
+}
+
+/* Content layout for statistics */
+.new-statistic-content {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Number display styles */
+.num {
+    font-size: 2.5em; /* Larger font size for numbers */
+}
+
+/* Text display styles */
+.text {
+    font-size: 1.5em; /* Font size for text */
+    color: #333; /* Color for the text */
+}
+
+/* Responsive Styles for New Statistics Section */
+@media (max-width: 768px) {
+    .new-statistics-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .new-statistic-item {
+        width: 80%; /* Set a width for items on small screens */
+        margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+
+    .new-num {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Info section styles */
+.infoo {
+    text-align: center; /* Center text within the div */
+    font-size: 1.5em; /* Adjust font size as needed */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Footer styles */
+.footer {
+    padding: 10px 0; /* Padding for footer */
+    align-items: center; /* Center text in footer */
+    margin-top: 150px; /* Margin above footer */
+} 
